@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New chat entry</title>
+    
+    <style>
+      body{
+        background-color: black;
+        color: aliceblue;
+        margin: 10px;
+       
+        display: inline;
+        justify-content: center;
+      }
+      h3{
+        display: flex;
+        justify-content: center;
+      }
+      form{
+        display: flex;
+      flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+      
+      }
+    </style>
+</head>
+<body >
+    <h3>New chat entry</h3>
+    <br>
+    <form method="post" action="/chats">
+      <input type="text" placeholder="who are you" name="from">
+      <br> <br>
+      <textarea name="msg" placeholder="Write your message here..."></textarea>
+      <br> <br>
+      <input type="text" placeholder="add reciever" name="to">
+      <br> <br>
+      <button>Create chat</button>
+    </form>
+</body>
+</html>
